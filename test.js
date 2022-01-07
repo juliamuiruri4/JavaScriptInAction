@@ -58,3 +58,16 @@ describe("pow", function() {
     it("Test 1", () => alert(1));
     it("Test 2", () => alert(2));
 })
+
+
+// Check for NaN error
+describe("pow" , function() {
+
+    it ("for negative n, the result is NaN", function() {
+        assert.isNaN(pow(2, -1));
+    });
+
+    it ("for a non-integer n, the result is NaN", function() {
+        assert.isNaN(pow(2, 1.5));
+    });
+})
