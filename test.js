@@ -71,3 +71,5 @@ describe("pow" , function() {
         assert.isNaN(pow(2, 1.5));
     });
 })
+
+//to run a single test in test with multiple it blocks, you can use the it.only instead of it.
