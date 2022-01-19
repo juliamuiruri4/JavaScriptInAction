@@ -126,3 +126,47 @@ function multiplyNumeric(obj) {
         }
     }
 }
+
+// Object - referencing
+let sing = {
+    vocal: "high"
+};
+
+sing.vocal = "normal"; 
+
+let song = sing;
+
+
+// Cloning objects - Have duplicate objects
+
+let street = {
+    address: 132,
+    name: "Leviticus"
+};
+
+let clone = {}; // empty object
+
+// copies the properties from user to duplicate object
+for( let key in user) {
+    clone[key] = user[key];
+}
+// OR
+let clone = Object.assign({}, user);
+
+
+// Merge (Object.assign)
+
+Object.assign(street, {address: 456}); // Add or replace the address property of object street
+Object.assign(street, sing); // Add all properties of sing to object street
+
+// Nested cloning = Properties can be referrences to other objects
+let chalk = {
+    length: 4,
+      color: {
+        light: 'Sky blue',
+        dark: 'Dark Cyan'
+    }
+};
+alert(chalk.color.dark);
+
+
