@@ -8,3 +8,14 @@
  let ans = 'ECMAScript';
  let result = (ans != 'ECMAScript') ? 'You do not know? It is ECMAScript' : 'Right';
  console.log(result);
+
+
+ let result1 = (2 + 1 < 4) ? 'Below' : 'Over';
+ console.log(result1);
+
+ let login = 'Director';
+ let message = (login == 'Employee') ? 'Hello' :
+(login == 'Director') ? 'Greetings' :
+(login == ' ') ? 'No login':
+' ' ;
+console.log(message);

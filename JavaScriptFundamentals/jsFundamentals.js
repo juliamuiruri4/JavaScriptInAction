@@ -1,173 +1,54 @@
  //BASICS
- //alert ("I'm JavaScript!");
 
- /*let admin;
+ let admin;
  let name = 'John';
  admin = name;
- alert(admin);*/
+ console.log(admin); // John
 
- /*let age = prompt('How old are you?', 28);
- alert(`You are ${age}years old!`);*/
+ // CONCATENATION
+ // let age = prompt('How old are you?', 28);
+ let age = 28;
+ console.log(`You are ${age} years old!`);
 
  // SWITCH CASE
-/* let isBoss = confirm("Are you their boss?");
+ // let isBoss = confirm("Are you their boss?");
+ let isBoss = true;
  switch(isBoss) {
  case false:
-     alert("You are not the boss!");
+     console.log("You are not the boss!");
     break;
  case true:
-    alert("Hi boss, glad to see you");
+    console.log("Hi boss, glad to see you");
     break;
- }*/
+ }
 
-/*Show the sign
- let num = prompt('Enter a number', 0);
+// If-else statement, example 1
+ // let num = prompt('Enter a number', 0);
+ let num = -5;
  if (num > 0) {
-     alert ('1');
+     console.log('1');
  } else if (num < 0) {
-     alert ('-1')
+    console.log('-1')
  } else {
-    alert ('0')
- };*/
+    console.log('0')
+ };
 
-// let result = (a + b < 4) ? 'Below' : 'Over';
-
-/*let message = (login == 'Employee') ? 'Hello' :
-(login == 'Director') ? 'Greetings' :
-(login == ' ') ? 'No login':
-' ' ;*/
-
-/*Doesn't run why?
-let age = +prompt('What is your age', 0);
-
-if (age >= 14 && age <= 90) {
-    return true
-} else {    
-    return false
-};*/
-
-//IF-ELSE
-/*let user = prompt('Who is there?', 'User');
+ // If-else statement, example 2
+//let user = prompt('Who is there?', 'User');
+let user = 'New';
 if ( user == 'Admin') {
-    let pass = prompt('Password?', 'Password');
+    // let pass = prompt('Password?', 'Password');
+    let pass = 'admin123';
 
-    if ( pass === 'TheMaster') {
-        alert ('Welcome!');
+    if ( pass === 'admin123') {
+        console.log('Welcome!');
     } else if ( pass == ' ' || pass == null) {
-        alert ('Canceled');
+        console.log('Cancelled');
     } else {
-    alert ('Wrong password')
+        console.log('Wrong password')
     }
 } else if ( user == ' ' || user == null) {
-    alert ('I do not know you')
+    console.log('I do not know you')
 } else {
-    alert('Canceled')
-}*/
-
-/*let sum = 0;
-while (true) {
-    let value =  +prompt('Enter a number', ' ');
-
-    if(!value) break;
-    sum += value;
+    console.log('Cancelled')
 }
-alert('The sum is: ' + sum);*/
-
-/*for ( let i = 0; i <= 10; i++) {
-    if (i % 2 != 0)  continue;
-
-    alert( )
-}*/
-
-/*if (browser === 'Edge') {
-    alert ("You've got the edge!");
-} else if (browser === 'Chrome' || browser === 'Firefox' || browser === 'Safari' || browser === 'Opera') {
-    alert ("Olay we support these browsers too");
-} default {
-    alert ("We hope that this page looks okay!");
-}*/
-
-/*let a = +prompt('a?', '');
-
-switch(a) {
-    case '0':
-        alert (0);
-        break;
-
-    case '1':
-        alert (1);
-        break;
-    
-    case '2':
-    case '3' :
-        alert ('2,3');
-        break;
-}*/
-
-/*function checkAge(age) {
-    return (age>18) ? true : confirm('Did parents allow you?');
-}
-
-OR
-
-function checkAge(age) {
-    return (age > 18) || confirm('Did parents allow you?'); // returns first falsy value
-}*/
-
-/*function min(a,b) {
-    if (a !== b) {
-    return (a > b) ? alert(a + 'is bigger') : alert(b + 'is bigger'); 
-    } else { alert (a + 'is equal to ' + b);}
-}
-
-alert(min(3,3));*/
-
-/*let x = +prompt('Enter x: ','');
-let n = +prompt('Enter n','');
-
-function pow(x,n) {
-    return x**n;
-}
-
-alert(pow(x,n));*/
-
-/*function sayHi() {
-    alert( "Hello");
-}
-
-alert( sayHi() );*/
-
-/*function ask(question, yes, no) {
-    if(confirm(question)) yes()
-    else no();
-
-    function showOk() {
-        alert('You said yes!');
-    }
- 
-    function showCancel() {
-        alert ('You said no!');
-    }
-}
-
-ask("Do you agree?", showOk, showCancel);*/
-
-/*let age = prompt('What is your age?','');
-
-let welcome = (age > 18) ?
-function() { alert ('Hello!');}:
-function() { alert ('Adios!');};
-
-let welcome = (age > 18) ?
-() => alert ('Hello!'):
-() => alert ('Adios!');
-
-welcome();*/
-
-// SPEC
-describe("pow", function() {
-    it("raises x to the n-th power", function() {
-        assert.equal(pow(2,3), 8);
-    });
-}
-);
