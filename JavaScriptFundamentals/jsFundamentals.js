@@ -52,3 +52,32 @@ if ( user == 'Admin') {
 } else {
     console.log('Cancelled')
 }
+
+
+/* // function that breaks when there is no input, break keyword
+let sum = 0;
+while (true) {
+    let value =  +prompt('Enter a number', ' ');
+
+    if(!value) break;
+    sum += value;
+}
+alert('The sum is: ' + sum); */
+
+
+/* // function that skips all odd numbers, continue keyword
+for ( let i = 0; i <= 10; i++) {
+    if (i % 2 != 0)  continue;
+
+    alert( )
+} */
+
+
+/* Adding a + sign before prompt changes the type of the input from a string to an integer
+let age = +prompt('What is your age', 0);
+
+if (age >= 14 && age <= 90) {
+    return true
+} else {    
+    return false
+};*/
